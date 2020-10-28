@@ -1,2 +1,5 @@
-# portfolio
-Online Portfolio with CV and contact tab
+# Portfolio
+
+An online portfolio of my work.
+
+Site includes: about me, portfolio, CV, contact
