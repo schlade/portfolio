@@ -18,8 +18,7 @@
 	--bg: hsl(0, 0%, 100%);
 	--bg-inv: hsl(0, 0%, 0%);
 	--grey: rgba(128, 128, 128, 0.2);
-	--code-in: hsl(0, 0%, 90%);
-	--code-bl: hsl(220, 13%, 18%);
+	--code: hsl(220, 13%, 18%);
 	--border-f: rgba(128, 128, 128, 1);
 	--border-h: rgba(128, 128, 128, 0.5);
 	--shadow: .2;
@@ -222,6 +221,14 @@ body::-webkit-scrollbar-thumb {
 		padding: 4rem 2rem;
 	}
 
+	.padding-left {
+		padding-left: 2rem;
+	}
+
+	.padding-right {
+		padding-right: 2rem;
+	}
+
 	.margin-bottom {
 		margin-bottom: 2rem;
 	}
@@ -234,6 +241,14 @@ body::-webkit-scrollbar-thumb {
 	
 	.padding {
 		padding: 4rem 6rem;
+	}
+
+	.padding-left {
+		padding-left: 6rem;
+	}
+
+	.padding-right {
+		padding-right: 6rem;
 	}
 
 	.margin-bottom {
