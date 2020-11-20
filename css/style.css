@@ -621,6 +621,10 @@ div.frontpage.text {
   align-items: flex-start;
 }
 
+div.frontpage.text h1 {
+  color: var(--color);
+}
+
 div.frontpage.text h1, div.frontpage.text h2 {
   line-height: 1.1;
 }
@@ -632,7 +636,7 @@ div.frontpage.text h1, div.frontpage.text h2 {
 }
 
 .work-carousel-container h3 {
-  color: var(--white);
+  color: var(--color);
 }
 
 .work-carousel {
@@ -1111,6 +1115,21 @@ body.portfolio-project #wrapper aside p {
   color: var(--black);
 }
 
+body.portfolio-project #wrapper aside a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color2);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+body.portfolio-project #wrapper aside a svg {
+  fill: var(--color2);
+  width: 2rem;
+  height: 2rem;
+  margin-left: -0.4rem;
+}
+
 body.portfolio-project #wrapper aside address {
   margin-bottom: 0.2rem;
 }
@@ -1254,7 +1273,7 @@ div.graph-line div.graph-value {
 
 body.cv .card-container {
   width: 100%;
-  background-color: var(--bg-inv);
+  background-color: var(--color2);
   margin-top: 2rem;
 }
 
@@ -2530,17 +2549,19 @@ MEDIAQUERY
     right: 20px;
     /*left: 50%;
     transform: translateX(-50%);*/
-    width: 20rem;
-    height: 80px;
+    width: 80px;
+    height: 20rem;
   }
 
   #sub-nav div.sub-nav-container {
-    width: 20rem;
+    width: 80px;
+    flex-direction: column;
     justify-content: space-between;
   }
 
   #sub-nav div.sub-nav-container div {
     width: 80px;
+    height: 80px;
     background-color: var(--bg-inv);
     border-radius: 50%;
   }
