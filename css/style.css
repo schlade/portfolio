@@ -770,13 +770,13 @@ div.maincourse-portfolio .header address {
   padding-bottom: 0;
 }
 
-.portfolio-sort-btn {
+#portfolio-sort-btn {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.portfolio-sort-btn button {
+#portfolio-sort-btn button {
   width: 145px;
   height: var(--height-button);
   cursor: pointer;
@@ -784,11 +784,11 @@ div.maincourse-portfolio .header address {
   background-color: var(--grey);
 }
 
-.portfolio-sort-btn button.active {
+#portfolio-sort-btn button.active {
   background-color: var(--color);
 }
 
-.portfolio-filter-btn {
+#portfolio-filter-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -796,7 +796,7 @@ div.maincourse-portfolio .header address {
   max-width: 40rem;
 }
 
-.portfolio-filter-btn button {
+#portfolio-filter-btn button {
   background-color: var(--color);
   margin: 0.25rem;
   height: 2rem;
@@ -805,12 +805,12 @@ div.maincourse-portfolio .header address {
   cursor: pointer;
 }
 
-.portfolio-filter-btn button.inactive {
+#portfolio-filter-btn button.inactive {
   background-color: var(--grey);
   opacity: 0.5;
 }
 
-.portfolio-filter-btn button p {
+#portfolio-filter-btn button p {
   font-size: 1rem;
   line-height: 1;
   font-weight: 400;
@@ -855,7 +855,7 @@ body.portfolio header {
   align-items: center;
   grid-template-areas:
     "back title empty";
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 3.7rem 1fr 3.7rem;
   padding: 0 20px;
 }
 
@@ -1078,10 +1078,7 @@ body.portfolio-project header div h3 {
   color: var(--white);
   margin: 0;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 body.portfolio-project #wrapper {
@@ -1743,7 +1740,7 @@ MEDIAQUERY
     margin-bottom: 0;
   }
 
-  .portfolio-sort-btn {
+  #portfolio-sort-btn {
     margin-bottom: 1rem;
   }
 
@@ -2145,7 +2142,7 @@ MEDIAQUERY
     margin: 0.5rem;
   }
 
-  .portfolio-sort-btn {
+  #portfolio-sort-btn {
     margin-bottom: 1.5rem;
   }
   
@@ -2640,7 +2637,7 @@ MEDIAQUERY
     flex: 1;
   }
 
-  .portfolio-sort-btn {
+  #portfolio-sort-btn {
     margin-bottom: 1.5rem;
   }
 
