@@ -18,6 +18,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <script src="javascript/portfolio.js"></script>
 </head>
 
 <body>
@@ -223,36 +224,36 @@
                     <h2>Portfolio</h2>
                 </div>
                 <div id="portfolio-sort-btn" class="portfolio">
-                    <button id="all-button" class="active" onclick="filterSelection('all')">
+                    <button id="all" class="active" onclick="toggleCat('all')">
                         <h3>All</h3>
                     </button>
-                    <button id="work-button" onclick="filterSelection('work')">
+                    <button id="work" onclick="toggleCat('work')">
                         <h3>Work</h3>
                     </button>
-                    <button id="personal-button" onclick="filterSelection('personal')">
+                    <button id="personal" onclick="toggleCat('personal')">
                         <h3>Personal</h3>
                     </button>
                 </div>
                 <div id="portfolio-filter-btn" class="portfolio margin-bottom">
-                    <button id="" onclick="filterSelection('htmlCss')">
+                    <button id="htmlCss" onclick="toggleSubCat('htmlCss')" class="active">
                         <p>HTML/CSS</p>
                     </button>
-                    <button id="" onclick="filterSelection('photoshop')">
+                    <button id="photoshop" onclick="toggleSubCat('photoshop')" class="active">
                         <p>Photoshop</p>
                     </button>
-                    <button id="" onclick="filterSelection('illustrator')" class="inactive">
+                    <button id="illustrator" onclick="toggleSubCat('illustrator')" class="active">
                         <p>Illustrator</p>
                     </button>
-                    <button id="" onclick="filterSelection('inDesign')">
+                    <button id="inDesign" onclick="toggleSubCat('inDesign')" class="active">
                         <p>InDesign</p>
                     </button>
-                    <button id="" onclick="filterSelection('afterEffects')">
+                    <button id="afterEffects" onclick="toggleSubCat('afterEffects')" class="active">
                         <p>After Effects</p>
                     </button>
-                    <button id="" onclick="filterSelection('premierePro')">
+                    <button id="premierePro" onclick="toggleSubCat('premierePro')" class="active">
                         <p>Premiere Pro</p>
                     </button>
-                    <button id="" onclick="filterSelection('blender')">
+                    <button id="blender" onclick="toggleSubCat('blender')" class="active">
                         <p>Blender</p>
                     </button>
                 </div>
@@ -325,7 +326,7 @@
                         </a>
                     </div>
 
-                    <div class="portfolio" data-aos="project">
+                    <div class="portfolio personal blender" data-aos="project">
                         <a href="portfolio/personal/phone-model.html">
                             <h4>3D Model</h4>
                             <img src="img/portfolio/personal/thumbnail/phonemodel.jpg" alt="">
@@ -346,7 +347,7 @@
                         </a>
                     </div>
 
-                    <div class="portfolio" data-aos="project">
+                    <div class="portfolio personal blender" data-aos="project">
                         <a href="portfolio/personal/glass-wallpaper">
                             <h4>Wallpaper</h4>
                             <img src="img/portfolio/personal/thumbnail/glasswallpaper.jpg" alt="">
