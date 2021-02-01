@@ -35,6 +35,7 @@ function filterSelection () {
     for (let pic of pictures.all[0].children) {
         if(activeCat == "all" ? true : pic.classList.value.includes(activeCat)) {
             if(checkForCats(pic, activeSubCats)) {
+                console.log(pic)
                 pic.style.display = "block";
             } else {
                 pic.style.display = "none";
