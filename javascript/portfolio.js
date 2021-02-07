@@ -1,16 +1,20 @@
-const pictures = {
+// Portfolio Display
+const projects = {
     all: document.getElementsByClassName("portfolio-display"),
     work: document.getElementsByClassName("work"),
     personal: document.getElementsByClassName("personal"),
     sub: {
+        htmlcss: document.getElementsByClassName("htmlcss"),
         photoshop: document.getElementsByClassName("photoshop"),
         illustrator: document.getElementsByClassName("illustrator"),
-        blender: document.getElementsByClassName("blender")
+        indesign: document.getElementsByClassName("indesign"),
+        premierepro: document.getElementsByClassName("premierepro"),
+        aftereffects: document.getElementsByClassName("aftereffects"),
+        blender: document.getElementsByClassName("blender"),
+        other: document.getElementsByClassName("other")
     }
 
 };
-
-var test
 
 function filterSelection () {
 
@@ -32,27 +36,26 @@ function filterSelection () {
         }
     }
 
-    for (let pic of pictures.all[0].children) {
-        if(activeCat == "all" ? true : pic.classList.value.includes(activeCat)) {
+    for (let project of projects.all[0].children) {
+        if(activeCat == "all" ? true : project.classList.value.includes(activeCat)) {
             if(activeSubCats.length == 0) {
-                console.log(pic)
-                pic.style.display = "block";
-            } else if (checkForCats(pic, activeSubCats)) {
-                console.log(pic)
-                pic.style.display = "block";
+                console.log(project)
+                project.style.display = "block";
+            } else if (checkForCats(project, activeSubCats)) {
+                project.style.display = "block";
             } else {
-                pic.style.display = "none";
+                project.style.display = "none";
             }
         } else {
-            pic.style.display = "none";
+            project.style.display = "none";
         }
     }
 
 };
 
-function checkForCats(pic, cats) {
+function checkForCats(project, cats) {
     for(let cat of cats) {
-        if(pic.classList.value.includes(cat)) {
+        if(project.classList.value.includes(cat)) {
             return true;
         }
     }
@@ -86,3 +89,41 @@ function toggleSubCat (pressed) {
 
     filterSelection()
 }
+
+
+// Portfolio Maincourse Nav
+
+var prevScrollPosition = window.pageYOffset;
+
+window.onscroll = function portfolioNav() {
+  let currentScrollPosition = window.pageYOffset;
+  // MOBILE
+  // Checks if device width is smaller than 611px
+  if (window.innerWidth < 611) {
+    if (prevScrollPosition > currentScrollPosition) {
+      document.getElementById("portfolio-nav").style.top = "80px";
+    } else {
+      document.getElementById("portfolio-nav").style.top = "-86px";
+    }
+  }
+  // TABLET
+  // Checks if device width is between 611px and 1024px
+  if (window.innerWidth > 610 && window.innerWidth < 1025) {
+    if (prevScrollPosition > currentScrollPosition) {
+      document.getElementById("portfolio-nav").style.top = "70px";
+    } else {
+      document.getElementById("portfolio-nav").style.top = "-32px";
+    }
+  }
+  // DESKTOP
+  // Checks if device width is bigger than 1024px
+  if (window.innerWidth > 1024) {
+    if (prevScrollPosition > currentScrollPosition) {
+      document.getElementById("portfolio-nav").style.top = "90px";
+    } else {
+      document.getElementById("portfolio-nav").style.top = "30px";
+    }
+  }
+  // Updates previous scroll position
+  prevScrollPosition = currentScrollPosition;
+};
