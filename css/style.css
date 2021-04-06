@@ -1712,17 +1712,21 @@ body.thank-you .links-container .links a {
 		transform: translate(0, 0);
 	}
 
-	#logo-background {
+	nav #logo-background {
 		pointer-events: none;
 		display: block;
 		position: fixed;
 		transform: translate(-50%, -50%);
 		top: 50%;
-		left: 25%;
+		left: 100%;
 		height: 125vh;
 		fill: var(--color2);
 		mix-blend-mode: var(--logo-blendmode);
 		opacity: 0.75;
+	}
+
+	nav.menu-open #logo-background {
+		left: 25%;
 	}
 
 	#menu {
