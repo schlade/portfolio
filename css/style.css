@@ -966,6 +966,10 @@ body.portfolio a.button svg {
 	height: 40px;
 }
 
+body.portfolio figure img {
+	display: block;
+}
+
 .gallery .gallerycont img {
 	display: none;
 	object-fit: contain;
