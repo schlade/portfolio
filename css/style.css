@@ -372,7 +372,8 @@ div.product-color-container div.product-color div address {
 	opacity: 1;
 }
 
-#wrapper {
+#wrapper,
+.wrapper {
 	overflow: hidden;
 }
 
@@ -1909,13 +1910,18 @@ body.thank-you .links-container .links a {
 
 	body.portfolio-maincourse #portfolio-nav a {
 		width: 100%;
-		height: 40px;
-		justify-content: flex-end;
+		height: 30px;
+		justify-content: flex-start;
 		margin-bottom: 2px;
 	}
 
 	body.portfolio-maincourse #portfolio-nav a:last-of-type {
 		margin-bottom: 0;
+	}
+
+	body.portfolio-maincourse #portfolio-nav a h3 {
+		text-align: left;
+		font-size: 1.2rem;
 	}
 
 	body.portfolio-maincourse .wrapper:first-child aside {

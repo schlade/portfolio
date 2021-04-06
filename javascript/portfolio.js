@@ -104,8 +104,8 @@ window.onscroll = function portfolioNav() {
 			document.getElementById("portfolio-nav").style.top = "80px";
 			document.querySelector("header").style.top = "0px";
 		} else {
-			document.getElementById("portfolio-nav").style.top = "-166px";
-			document.querySelector("header").style.top = "-226px";
+			document.getElementById("portfolio-nav").style.top = "-126px";
+			document.querySelector("header").style.top = "-186px";
 		}
 	}
 	// TABLET
