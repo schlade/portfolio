@@ -372,6 +372,10 @@ div.product-color-container div.product-color div address {
 	opacity: 1;
 }
 
+#wrapper {
+	overflow: hidden;
+}
+
 /*NAV*/
 
 .nav-container {
@@ -1837,6 +1841,7 @@ body.thank-you .links-container .links a {
 	}
 
 	#portfolio-sort-btn {
+		width: 100%;
 		margin-bottom: 1rem;
 	}
 
@@ -2569,7 +2574,7 @@ body.thank-you .links-container .links a {
 	/*SUB NAV*/
 
 	#sub-nav {
-		bottom: 10px;
+		bottom: calc(calc(8rem - 80px) / 2);
 		right: calc(calc(8rem - 80px) / 2);
 		width: 80px;
 		height: 20rem;
@@ -3170,7 +3175,7 @@ body.thank-you .links-container .links a {
 	/*SUB NAV*/
 
 	#sub-nav {
-		bottom: 10px;
+		bottom: calc(calc(8rem - 80px) / 2);
 		right: calc(calc(8rem - 80px) / 2);
 		width: 80px;
 		height: 20rem;
