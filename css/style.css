@@ -1041,7 +1041,7 @@ body.portfolio-maincourse figure.product img {
 
 body.portfolio-maincourse aside .specifications h3 {
 	color: var(--white);
-	margin-bottom: 0.4rem;
+	margin: 0.6rem 0 0.4rem 0;
 }
 
 body.portfolio-maincourse aside .specifications h3.title span {
