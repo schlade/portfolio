@@ -1924,8 +1924,12 @@ body.thank-you .links-container .links a {
 		font-size: 1.2rem;
 	}
 
-	body.portfolio-maincourse .wrapper:first-child aside {
+	body.portfolio-maincourse .wrapper aside {
 		padding-top: calc(126px + 80px + 1rem);
+	}
+
+	body.portfolio-maincourse .wrapper:nth-child(2) aside {
+		padding-top: 3rem;
 	}
 
 	body.portfolio-maincourse figure.product {
