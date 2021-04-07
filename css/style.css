@@ -1362,10 +1362,6 @@ div.cv p.cv-value {
 	text-transform: uppercase;
 }
 
-div.cv p.cv-value {
-	text-align: right;
-}
-
 div.cv p.cv-year {
 	width: 96px;
 }
@@ -1377,6 +1373,7 @@ div.cv p.cv-occupation {
 
 div.cv p.cv-value {
 	width: 127px;
+	text-align: right;
 }
 
 div.cv:nth-child(even) {
@@ -3677,6 +3674,10 @@ body.thank-you .links-container .links a {
 
 	main.cv section.cv div h3 {
 		margin-bottom: 1rem;
+	}
+
+	div.cv p.cv-value {
+		width: 170px;
 	}
 
 	/*CONTACT*/
