@@ -1789,12 +1789,12 @@ body.thank-you .links-container .links a {
 
 	header.frontpage {
 		background-image: url(../img/index/mobile.jpg);
-		height: 100vh;
+		height: calc(100vh - 60px);
 	}
 
 	header.frontpage::before {
 		height: calc(345px + 6rem);
-		bottom: 0;
+		bottom: 60px;
 	}
 
 	div.frontpage.text {
@@ -2217,12 +2217,12 @@ body.thank-you .links-container .links a {
 
 	header.frontpage {
 		background-image: url(../img/index/tablet.jpg);
-		height: 100vh;
+		height: calc(100vh - 60px);
 	}
 
 	header.frontpage::before {
 		height: calc(345px + 8rem);
-		bottom: 0;
+		bottom: 60px;
 	}
 
 	div.frontpage.text {
