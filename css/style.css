@@ -1789,7 +1789,7 @@ body.thank-you .links-container .links a {
 
 	header.frontpage {
 		background-image: url(../img/index/mobile.jpg);
-		height: calc(100vh - 60px);
+		height: calc(100vh - 60px); /*Hej Jan*/
 	}
 
 	header.frontpage::before {
