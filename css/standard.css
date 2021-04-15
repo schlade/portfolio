@@ -14,7 +14,6 @@
 	--text-inv: hsl(0, 0%, 85%);
 	--hue: 50;
 	--hue2: 255;
-	/*--hue: 45;*/
 	--color: hsl(var(--hue), 100%, 50%);
 	--color2: hsl(var(--hue2), 100%, 30%);
 	--color2b: hsl(var(--hue2), 100%, 50%);
