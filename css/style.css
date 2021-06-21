@@ -1231,6 +1231,10 @@ body.portfolio-project .wrapper main video {
 	max-width: 960px;
 }
 
+body.portfolio-project.kronikos .wrapper main .sequence-spreads figure.instagram {
+	max-width: 460px;
+}
+
 body.portfolio-project.malukka .wrapper main .sequence-pages figure {
 	max-height: unset;
 }
@@ -2019,6 +2023,14 @@ body.thank-you .links-container .links a {
 		margin-bottom: 0;
 	}
 
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure:first-child {
+		margin-left: 0;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure {
+		width: 100%;
+	}
+
 	/*CV*/
 
 	main.cv aside.cv {
@@ -2436,6 +2448,23 @@ body.thank-you .links-container .links a {
 	body.portfolio-project .wrapper main [class|="sequence"]:last-child,
 	body.portfolio-project .wrapper main [class|="sequence"] figure:last-child {
 		margin-bottom: 0;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads {
+		justify-content: space-between;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure:first-child {
+		margin: 0;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure {
+		width: calc(50% - 1rem);
+		margin: 0;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure img {
+		width: 100%;
 	}
 
 	body.portfolio-project.malukka .wrapper main .sequence-pages figure img {
@@ -3003,6 +3032,23 @@ body.thank-you .links-container .links a {
 	body.portfolio-project .wrapper main [class|="sequence"]:last-child,
 	body.portfolio-project .wrapper main [class|="sequence"] figure:last-child {
 		margin-bottom: 0;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads {
+		justify-content: space-between;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure:first-child {
+		margin: 0;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure {
+		width: calc(50% - 1rem);
+		margin: 0;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure img {
+		width: 100%;
 	}
 
 	body.portfolio-project.malukka .wrapper main .sequence-pages figure img {
@@ -3621,6 +3667,23 @@ body.thank-you .links-container .links a {
 	body.portfolio-project .wrapper main [class|="sequence"]:last-child,
 	body.portfolio-project .wrapper main [class|="sequence"] figure:last-child {
 		margin-bottom: 0;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads {
+		justify-content: space-between;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure:first-child {
+		margin: 0;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure {
+		width: calc(50% - 1rem);
+		margin: 0;
+	}
+
+	body.portfolio-project.kronikos .wrapper main .sequence-spreads figure img {
+		width: 100%;
 	}
 
 	body.portfolio-project.malukka .wrapper main .sequence-pages figure img {
