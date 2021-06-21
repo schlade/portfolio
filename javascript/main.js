@@ -5,7 +5,6 @@ function navToggle() {
 };
 
 // Cookie Banner
-// https://www.youtube.com/watch?v=R_-oGJBg3nw
 const cookieContainer = document.querySelector("#cookie-container");
 const cookieButton = document.querySelector("#cookie-btn");
 
