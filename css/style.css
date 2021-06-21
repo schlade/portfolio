@@ -367,6 +367,34 @@ div.product-color-container div.product-color div address {
 
 /*GENERAL*/
 
+#cookie-container {
+	position: fixed;
+	transform:translate(-50%, 0%);
+	left: 50%;
+	bottom: -100%;
+	z-index: 99999;
+	width: min(1080px, 100% - 2rem);
+	background-color: var(--black);
+	transition: 400ms;
+	padding: 2rem;
+}
+
+#cookie-container.active {
+	bottom: 2rem;
+}
+
+#cookie-container p {
+	color: var(--color);
+	margin-bottom: 0.8rem;
+}
+
+#cookie-container #cookie-btn {
+	display: inline-flex;
+    align-self: flex-end;
+	color: var(--black);
+	background-color: var(--color);
+}
+
 [data-aos=project].aos-animate {
 	transform: rotateX(0deg) translateY(0px) scale(1);
 	opacity: 1;
@@ -2242,7 +2270,8 @@ body.thank-you .links-container .links a {
 	}
 
 	div.frontpage.text h1 {
-		line-height: 0.8;
+		line-height: 1;
+		margin-bottom: 0.5rem;
 	}
 
 	.work-carousel-container {
