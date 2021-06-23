@@ -1,9 +1,3 @@
-// Burger Menu
-function navToggle() {
-	const nav = document.getElementById("nav");
-	nav.classList.toggle("menu-open");
-};
-
 // Cookie Banner
 const cookieContainer = document.querySelector("#cookie-container");
 const cookieButton = document.querySelector("#cookie-btn");
@@ -12,6 +6,12 @@ cookieButton.addEventListener("click", () => {
   cookieContainer.classList.remove("active");
   localStorage.setItem("cookieBannerDisplayed", "true");
 });
+
+// Burger Menu
+function navToggle() {
+	const nav = document.getElementById("nav");
+	nav.classList.toggle("menu-open");
+};
 
 setTimeout(() => {
   if (!localStorage.getItem("cookieBannerDisplayed")) {
