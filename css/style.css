@@ -373,7 +373,7 @@ div.product-color-container div.product-color div address {
 	left: 50%;
 	bottom: -100%;
 	z-index: 99999;
-	width: min(1080px, 100% - 2rem);
+	width: min(720px, 100% - 2rem);
 	background-color: var(--black);
 	transition: 400ms;
 	padding: 2rem;
