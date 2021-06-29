@@ -1,9 +1,9 @@
 // Cookie Banner
-const cookieContainer = document.querySelector("#cookie-container");
+const cookieBanner = document.querySelector("#cookie-banner");
 const cookieButton = document.querySelector("#cookie-btn");
 
 cookieButton.addEventListener("click", () => {
-  cookieContainer.classList.remove("active");
+  cookieBanner.classList.remove("active");
   localStorage.setItem("cookieBannerDisplayed", "true");
 });
 
@@ -15,7 +15,7 @@ function navToggle() {
 
 setTimeout(() => {
   if (!localStorage.getItem("cookieBannerDisplayed")) {
-    cookieContainer.classList.add("active");
+    cookieBanner.classList.add("active");
   }
 }, 2000);
 
