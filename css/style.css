@@ -892,6 +892,16 @@ main.frontpage div.about {
 	max-height: 400px;
 }
 
+.portfolio-display div a::before {
+	position: absolute;
+    bottom: .2rem;
+	width: 100%;
+    content: '';
+    background: linear-gradient(transparent, hsla(0, 0%, 0%, .75));
+    width: 100%;
+    pointer-events: none;
+}
+
 .portfolio-display div a {
 	width: 100%;
 	height: 100%;
@@ -1916,6 +1926,10 @@ body.thank-you .links-container .links a {
 		padding: 1px;
 	}
 
+	.portfolio-display div a::before {
+		height: calc(100vw / calc(3 * 4) - 0.25rem);
+	}
+
 	/*PORTFOLIO WORK*/
 
 	body.portfolio {
@@ -2340,6 +2354,10 @@ body.thank-you .links-container .links a {
 	.portfolio-display div {
 		width: calc(100vw / 4 - .5rem);
 		height: calc(100vw / 4 - .5rem);
+	}
+
+	.portfolio-display div a::before {
+		height: calc(100vw / calc(4 * 4) - .5rem);
 	}
 
 	/*PORTFOLIO WORK*/
@@ -2817,6 +2835,10 @@ body.thank-you .links-container .links a {
 	.portfolio-display div {
 		width: calc(100vw / 6 - .5rem);
 		height: calc(100vw / 6 - .5rem);
+	}
+
+	.portfolio-display div a::before {
+		height: calc(100vw / calc(6 * 4) - .5rem);
 	}
 
 	/*PORTFOLIO WORK*/
@@ -3440,6 +3462,10 @@ body.thank-you .links-container .links a {
 	.portfolio-display div {
 		width: calc(100vw / 8 - .2rem);
 		height: calc(100vw / 8 - .2rem);
+	}
+
+	.portfolio-display div a::before {
+		height: calc(100vw / calc(8 * 4) - .5rem);
 	}
 
 	/*PORTFOLIO WORK*/
