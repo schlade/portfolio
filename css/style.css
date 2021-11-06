@@ -1485,6 +1485,7 @@ form.contact textarea:focus {
 form.contact textarea {
 	height: 31px;
 	resize: vertical;
+	transition: none;
 }
 
 form.contact div.form-button {
