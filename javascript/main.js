@@ -30,3 +30,19 @@ if (top !== null) {
 window.addEventListener("beforeunload", () => {
     localStorage.setItem("sidebar-scroll", sidebar.scrollTop);
 });
+
+// Calculate Age
+function calculateAge() {
+    var dob      = new Date("2000-05-01");
+    var ageDifMs = Date.now() - dob.getTime();
+    var ageDate  = new Date(ageDifMs);
+    var age      = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+    console.log(age);
+
+    return document.getElementById("age").innerHTML = age;
+}
+
+if (document.getElementById("age")) {
+    window.onload = calculateAge;
+}
